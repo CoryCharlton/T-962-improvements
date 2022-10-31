@@ -41,6 +41,15 @@ static const profile syntechlfprofile = {
 	}
 };
 
+// Chip Quik SMD291AX50T 63Sn/37Pb leaded profile
+static const profile cqsmd291ac50t_profile = {
+	"CQ SMD291AX50T", {
+		 25, 60, 80,100,106,112,118,124,130,136,142,148,150,160,170,183,
+		193,203,213,223,233,235,233,210,183,150,130,110, 90, 80, 70, 60,
+		 50, 40, 30, 20, 10,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0
+	}
+};
+
 #ifdef RAMPTEST
 // Ramp speed test temp profile
 static const profile rampspeed_testprofile = {
@@ -73,6 +82,7 @@ static const profile* profiles[] = {
 	&syntechlfprofile,
 	&nc31profile,
 	&am4300profile,
+	&cqsmd291ac50t_profile,
 #ifdef RAMPTEST
 	&rampspeed_testprofile,
 #endif
