@@ -10,7 +10,7 @@
 #include "reflow_profiles.h"
 
 #define RAMPTEST
-#define PIDTEST
+//#define PIDTEST
 
 extern uint8_t graphbmp[];
 
